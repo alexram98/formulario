@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en HTML 5</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Formulario en HTML 5</h1>
+    </header>
+    <!-- Contenido de la pagina principal -->
+    <main>
+        <!-- section 1 -->
+        <section>
+            <h2>ejemplo 2</h2>
+            <!-- inicio de formulario -->
+            <form>
+                <label for="">FECHA:</label>
+                <input type="date" name="fecha" />
+                <br />
+                <br />
+                <label for="">HORA:</label>
+                <input type="time" name="hora" />
+                <br />
+                <br />
+                <label for="">FECHA y HORA:</label>
+                <input type="datetime-local" name="fechahora" />
+                <br />
+                <br />
+                <label for="">MES:</label>
+                <input type="month" name="mes" />
+                <br />
+                <br />
+                <label for="">SEMANA:</label>
+                <input type="week" name="semana" />
+                <br />
+                <br />
+            </form>
+            <!-- fin de formulario -->
+        </section>
+
+        <section>
+            <h2>Formulario de Casillas o Radiobuttons</h2>
+            <form>
+                <h2>checkbox</h2>
+                <label for="">Comidas Favoritas</label>
+                <br>
+                <label for="">POLLO</label>
+                <input type="checkbox" name="pollo" />
+                <br>
+                <label for="">PESCADO</label>
+                <input type="checkbox" name="pecado" />
+                <br>
+                <label for="">CARNE</label>
+                <input type="checkbox" name="carne" />
+                <br>
+                <label for="">ALBONDIGA</label>
+                <input type="checkbox" name="albondiga" />
+                <br>
+                <h3>Radiobuttons</h3>
+                <label>SEXO</label>
+                <br>
+                <label>hombre</label>
+                <input type="radio" name="hombre">
+                <label>mujer</label>
+                <input type="radio" name="mujer">
+                <label>otro</label>
+                <input type="radio" name="otro">
+            </form>
+        </section>
+        <section>
+            <h3>Formulario de Listas</h3>
+            <form>
+                <select name="Pais">
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Inglaterra">Inglaterra</option>
+                    <option value="EE.UU">EE.UU</option>
+                    <option value="Guatemala">Guatemala</option>
+                </select>
+
+
+
+                <select name="combo" multiple>
+                    <!-- Formato alternativo con atributo label -->
+                    <optgroup label="Opciones básicas">
+                        <option value="1" label="Opcion 1"> </option>
+                    </optgroup>
+
+                    <optgroup label="Opciones avanzadas">
+                        <option value="2" label="Opcion 2"> </option>
+                        <option value="3" label="Opcion 3"> </option>
+                    </optgroup>
+                </select>
+
+                <input type="text" list="items" />
+                <datalist id="items">
+                    <option value="1">option</option>
+                    <option value="2">option</option>
+                    <option value="3">option</option>
+                </datalist>
+            </form>
+        </section>
+        <section>
+            <h2>campo de color y archivo</h2>
+            <form enctype="multipart/form-data" action="formulario2.html" method="post" name="formularioregistro">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name">
+                </fieldset>
+
+                <fieldset>
+                    <label for="">selecciona el color deseasdo</label>
+                    <input type="color" name="color" id="color" value="#1BF44A" />
+
+
+                    <br>
+                    <br>
+                    <h2>seleccione un archivo</h2>
+
+                    <label for="adjunto">seleccione un archivo</label>
+                    <input 
+                    type="file" 
+                    name="adjunto"
+                    id="adjunto" 
+                    accept=".pdf,.jpg,.png" 
+                    multiple 
+                    />
+                </fieldset>
+                <br>
+                <br>
+                <input 
+                type="submit"
+                name="enviardatos"
+                value="REGISTRAR INFROMACION"
+                />
+                <button type="button">REGISTRAR</button>
+                <button type="reset">Limpiar datos de infromacion</button>
+            </form>
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer>
+        <h3>
+            &copy; copirigth: Alexander Hernandez
+        </h3>
+    </footer>
+</body>
+
+</html>

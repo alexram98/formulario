@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en HTML 5</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Formulario en HTML 5</h1>
+    </header>
+    <!-- Contenido de la pagina principal -->
+    <main>
+        <!-- section 1 -->
+        <section>
+            <h2>ejemplo 1</h2>
+            <!-- inicio de formulario -->
+            <form>
+                <label for="">NOMBRE COMPLETO</label>
+                <input type="text" 
+                name="nombreCompleto" 
+                placeholder="Escriba aqui..." 
+                spellcheck="true"
+                size="50"
+                />
+                <br />
+                <br />
+                <!-- CAMPO PARA BUSCAR -->
+                <label for="">BUSCAR:</label>
+                <input type="search"
+                name="BUSCAR"
+                placeholder="buscar en mi pagina..."
+                />
+                <br />
+                <br />
+                <label for="">TELEFONO:</label>
+                <input type="tel" 
+                name="TELEFONO" 
+                placeholder="0000-0000..." 
+                />
+                <br />
+                <br />
+                <label for="">URL:</label>
+                <input type="url" 
+                name="URL" 
+                placeholder="http://127.0.0.1:5500/formulario.."
+                />
+                <br />
+                <br />
+                <label for="">EMAIL:</label>
+                <input type="Email" 
+                name="Email" 
+                placeholder="rrdahzde22@gmail.com..." 
+                />
+                <br />
+                <br />
+                <label for="">CONTRASEÑA:</label>
+                <input type="password" 
+                name="password" 
+                placeholder="Escriba una clave..." 
+                />
+                <br />
+                <br />
+                <label for="">CAMPO OCULTO:</label>
+                <input type="hidden" 
+                name="token" 
+                value="clave..." 
+                />
+                <br />
+                <br />
+                <label for="">TEXT AREA - DIRECCION, UN COMENTARIO,ETC </label>
+                <TExtarea
+                cols="20" 
+                rows="10"
+                name="Direccion"
+                placeholder="Escriba una direccion aca: ejemplo: Zacatecoluca"
+                ></TExtarea>
+                <br/>
+                <br />
+                <br />
+                <label for="">NUMERO ENTERO:</label>
+                <input 
+                type="number" 
+                name="numero"
+                min="10" 
+                max="50" 
+                step="5" 
+                value="ingrese una cantidad numerica..." 
+                />
+                <br />
+                <br />
+                <label for="">CAMPO PARA RANGO:</label>
+                <input 
+                type="range"
+                name="rango" 
+                min="10" 
+                max="50" 
+                step="5" />
+                <br/>
+            </form>
+            <!-- fin de formulario -->
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer>
+        <h3>
+            &copy; copirigth: Alexander Hernandez
+        </h3>
+    </footer>
+</body>
+
+</html>
